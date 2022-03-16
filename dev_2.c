@@ -12,10 +12,15 @@ int  main ( int argc, char *argv[]){
       /* On gère l'erreur */
       fprintf (stderr, " Erreur lors de la création du fils( %d ) \n " , errno);
       return  1 ;
-    }
+  }
     if (pid[i] == 0 )
     {
       /* Dans le fils */
       fprintf (stdout, " Je suis ( %d ), mon père ( %d ) \n " , getpid (), getppid ());
       break ;
     }
+    for (i = 0 ; i < 4 ; i++){
+     int status;
+      wait (&status);
+    }
+}
