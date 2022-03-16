@@ -1,9 +1,9 @@
-#includ <sys/types.h>
-#includ <sys/stat.h>
-#includ <fcntl.h>
-#includ <unistd.h>
-#includ <stdio.h>
-#includ <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 //fonction pour calculer le md5 des deux fichiers
 EVP_MD_CTX * getFileMD5( const char * path )
