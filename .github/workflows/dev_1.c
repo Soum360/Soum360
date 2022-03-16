@@ -1,10 +1,10 @@
 //Programme qui fait la copie de fichiers
-#includ <sys/types.h>
-#includ <sys/stat.h>
-#includ <fcntl.h>
-#includ <unistd.h>
-#includ <stdio.h>
-#includ <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 int main(int argc, char **argv)
 {
 int fd1, fd2, rc;
